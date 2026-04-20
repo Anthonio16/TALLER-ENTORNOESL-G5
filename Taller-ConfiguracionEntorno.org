@@ -262,13 +262,14 @@ Estudiante D:
 |-----------+---------|
 | iteración | Puntaje |
 |-----------+---------|
-|         1 |     114 |                                        |
-|         2 |     140 |
-|         3 |     140 |
+|         1 |   114   |                                        |
+|         2 |   140   |
+|         3 |   140   |
 |-----------+---------|
 
 #+begin_src org
 [[~/TALLER-ENTORNOWSL-G5/TALLER-ENTORNOESL-G5/images/EMACSTRAINING.png]]
+
 
 #+end_src
 ** Usando Emacs para tener Ayuda sobre Emacs
@@ -295,14 +296,18 @@ Para consultar lo que hace un comando ejecute:
 1. **Estudiante A:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 2. **Estudiante B:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 3. 
-4. **Anthonny Almeida:** ~C-x C-s~.Save current buffer in visited file if modified.
+4. **Anthonny Almeida:**
+~C-x C-s~.Save current buffer in visited file if modified.
 Variations are described below.
-~C-f~.Move point N characters forward (backward if N is negative).
+
+~C-f~ Move point N characters forward (backward if N is negative).
 On reaching end or beginning of buffer, stop and signal error.
 Interactively, N is the numeric prefix argument.
 If N is omitted or nil, move point 1 character forward.
-~M-a~Go to beginning of sentence, or beginning of table field.
-~C-x 2~Split WINDOW-TO-SPLIT into two windows, one above the other.
+
+~M-a~ Go to beginning of sentence, or beginning of table field.
+
+~C-x 2~ Split WINDOW-TO-SPLIT into two windows, one above the other.
 WINDOW-TO-SPLIT defaults to the selected window if omitted or nil.
 The newly created window will be below WINDOW-TO-SPLIT and will show
 the same buffer as WINDOW-TO-SPLIT, if it is a live window, else the
@@ -315,22 +320,26 @@ Return the new window.
 1. **Estudiante A:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 2. **Estudiante B:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
 3.
-4. **Anthonny Almeida**: ~C-x k~ Kill the buffer specified by BUFFER-OR-NAME.
+4. **Anthonny Almeida**:
+ ~C-x k~ Kill the buffer specified by BUFFER-OR-NAME.
 The argument may be a buffer or the name of an existing buffer.
 Argument nil or omitted means kill the current buffer.  Return t if the
 buffer is actually killed, nil otherwise.
+
  ~C-x C-f~ Edit file FILENAME.
 Switch to a buffer visiting file FILENAME, creating one if none
 already exists.
 Interactively, the default if you just type RET is the current directory,
 but the visited file name is available through the minibuffer history:
 type M-n to pull it into the minibuffer.
+
 ~M-%~ Replace some occurrences of FROM-STRING with TO-STRING.
 As each match is found, the user must type a character saying
 what to do with it.  Type SPC or ‘y’ to replace the match,
 DEL or ‘n’ to skip and go to the next match.  For more directions,
 type C-h at that time.
-~C-s~Do incremental search forward.
+
+~C-s~ Do incremental search forward.
 With a prefix argument, do an incremental regular expression search instead.
 
 * Equipo de Trabajo
