@@ -3,8 +3,8 @@
 #+options: d:(not "LOGBOOK") date:t e:t email:nil expand-links:t f:t
 #+options: inline:t num:t p:nil pri:nil prop:nil stat:t tags:t
 #+options: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t
-#+title: Taller de Configuracion de Entorno WSL
-#+date: <2026-04-19 
+#+title: Taller de Configuración de Entorno WSL
+#+date: <2026-04-19> 
 #+author: Anthonny Almeida, Nelson Almeida,Anthony Erazo
 #+email:anthonny.almeida@epn.edu.ec, nelson.almeida@epn.edu.ec, anthony.erazo01@epn.edu.ec
 #+language: Espanol
@@ -34,7 +34,7 @@
 
 #+begin_export latex
 \fancyhead[C]{\includegraphics[scale=0.05]{./images/logoEpn.jpg}\\
-ESCUELA POLITECNICA NACIONAL\\FACULTAD DE INGENIERIA DE SISTEMAS\\
+ESCUELA POLITÉCNICA NACIONAL\\FACULTAD DE INGENIERÍA DE SISTEMAS\\
 ARQUITECTURA DE COMPUTADORES}
 \thispagestyle{fancy}
 #+end_export
@@ -42,7 +42,7 @@ ARQUITECTURA DE COMPUTADORES}
 * Objetivos
 
 - Configurar y validar el entorno de trabajo para la asignatura de Arquitectura de Computadores en Linux o WSL.
-- Verificar la instalacion de herramientas base: mamba/anaconda (Python), Emacs y \LaTeX.
+- Verificar la instalación de herramientas base: mamba/anaconda (Python), Emacs y \LaTeX.
 - Documentar evidencias tecnicas mediante capturas y comandos ejecutados.
 
 * Instrucciones
@@ -55,7 +55,7 @@ ARQUITECTURA DE COMPUTADORES}
 5. Verifique que en las distintas secciones de este archivo esté
    identificado con nombre e email el aporte del estudiante.
 
-Si require insertar una imagen, crear una carpeta ~images~ y colocar
+Si requiere insertar una imagen, crear una carpeta ~images~ y colocar
 la imagen dentro. Para llamar la imagen desde Emacs use ~C-c C-l~ y
 busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 
@@ -65,20 +65,12 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 * Actividades
 ** Configuración de WSL con Ubuntu, \LaTeX, Python e Emacs
  
-1. Verificacion de entorno mamba/anaconda
+1. Verificación de entorno mamba/anaconda
    1. Active WSL (si aplica) y su entorno de trabajo.
    2. Ejecute ~mamba info~ con ~C-c C-c~ dentro del bloque de código.
-   3. Si el comando falla, active un entorno con ~mamba activate iccd332~ e intente de nuevo.
+   3. Si el comando falla, active un entorno con ~mamba activate iccd332~ e intente de nuevo.  
 
-
-*** Estudainte A: 
-   #+begin_src shell :exports both :results verbatim
-     mamba info
-   #+end_src
-  
-  
-
-*** Estudiante B: Nelson ALmeida
+*** Estudiante B: Nelson Almeida
 #+begin_src shell :exports both :results verbatim
      mamba info
    #+end_src
@@ -168,7 +160,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
 		  platform : linux-64
    #+end_example
 
-2. Verificacion de Python
+2. Verificación de Python
    1. Active el entorno ~iccd332~ para abrir Emacs con ~mamba activate iccd332~.
    2. Ejecute ~python --version~ en la consola y desde Emacs.
 
@@ -197,7 +189,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    #+RESULTS:
    : Python 3.14.4
 
-3. Verificacion de Emacs
+3. Verificación de Emacs
    Ejecute ~emacs --version~ en la consola y desde Emacs.
 
 *** Estudiante B: Nelson Almeida
@@ -241,7 +233,7 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    : under the terms of the GNU General Public License.
    : For more information about these matters, see the file named COPYING.
 
-4. Verificacion de LaTeX
+4. Verificación de LaTeX
    Ejecute ~latex --version~ en la consola y desde Emacs.
 
 *** Estudiante B: Nelson Almeida
@@ -309,12 +301,12 @@ busque el archivo o escriba:Puede insertar una imagen con la sintaxis:
    #+end_example
 
 
-5. Registro de problemas y solucion aplicada
+5. Registro de problemas y solución aplicada
 
-Complete la siguiente tabla si tuvo errores durante la configuracion:
+Complete la siguiente tabla si tuvo errores durante la configuración:
 
 #+ATTR_LATEX: :environment tabularx :width \textwidth :align lXX
-| *Herramienta* | *Problema observado* | *Solucion aplicada* |
+| *Herramienta* | *Problema observado* | *Solución aplicada* |
 |---------------+----------------------+---------------------|
 |               |                      |                     |
 |               |                      |                     |
@@ -334,14 +326,6 @@ interés. Verifique que en la parte superior se active el menú de
 tabla. Dentro de la región de la tabla puede dar C-c C-c para alinear
 automáticamente la tabla al contenido del texto que escriba. Para
 generar una nueva fila escriba presione la tecla TAB
-
-<Estudiante A>
-#+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
-| *Comando*         | *Descripción*               | *Comando* | *Descripción*                     |
-|-------------------+-----------------------------+-----------+-----------------------------------|
-| ~C-c C-e # latex~ | Insertar template de  latex | ~C-x C-s~ | Guardar los cambios en el archivo |
-|                   |                             |           |                                   |
-|                   |                             |           |                                   |
 
 <Nelson Almeida>
 #+ATTR_LATEX: :environment longtable :align |p{0.2\linewidth}|p{0.3\linewidth}|p{0.2\linewidth}|p{0.3\linewidth}|
@@ -366,8 +350,8 @@ generar una nueva fila escriba presione la tecla TAB
 | *Comando*         | *Descripción*               | *Comando*   | *Descripción*                     |
 |-------------------+-----------------------------+-------------+-----------------------------------|
 | ~C-x C-f # latex~ | Abrir Archivo(find-file)    | ~C-x C-s~   | Guardar los cambios en el archivo |
-| ~C-g~             | Cancelar comando            | ~C-d~       | Borrar Caracter                   |
-| ~M-d~             | Borrar la palabra siguiente | ~M-w~       | Copiar Region                     |
+| ~C-g~             | Cancelar comando            | ~C-d~       | Borrar Carácter                   |
+| ~M-d~             | Borrar la palabra siguiente | ~M-w~       | Copiar Región                     |
 | ~C-y~             | Pegar                       | ~C-/ o C-_~ | Deshacer                          |
 ** Comandos Emacs Juego
 En la anterior sección usted revisó los comandos de mayor interés
@@ -375,20 +359,7 @@ sobre la manipulación de Emacs. Es hora de poner en práctica sus
 conocimientos. Realice unas 3 visitas al juego  [[https://chat.qwen.ai/s/deploy/t_23ff57ef-b59a-4bd7-9b79-54679b33686d][Emacs-Trainer]] y apunte
 en la siguiente tabla su puntaje.
 
-Estudiante A: 
-|-----------+---------|
-| iteración | Puntaje |
-|-----------+---------|
-|         1 |         |
-|         2 |         |
-|         3 |         |
-|-----------+---------|
 
-#+begin_src org
-[[./estudianteA-game.png]]
-#+end_src
-
-[[./EmacsTrainerResult.png]]
 
 Estudiante B:Nelson Almeida
 |-----------+---------|
@@ -414,15 +385,13 @@ Estudiante C:Anthony Erazo
 [[./images/emacstrainingAnthony-el1.png]]
 [[./images/emacstrainingAnthony-el2.png]]
 [[./images/emacstrainingAnthony-el3.png]]
-#+begin_src org
-[[./estudianteC-game.png]]
-#+end_src
 
-Estudiante D: 
+
+Estudiante D:Antonny Almeida 
 |-----------+---------|
 | iteración | Puntaje |
 |-----------+---------|
-|         1 |   128   |                                        |
+|         1 |   128   |                                        
 |         2 |   140   |
 |         3 |   140   |
 |-----------+---------|
@@ -456,7 +425,7 @@ Para consultar lo que hace un comando ejecute:
 8. Pegue el texto en <Pegar lo que dice el...> con ~C-y~
 
 **Comandos Fáciles**
-1. **Estudiante A:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
+
 2. **Nelson Almeida:**
 
 ~C-n~ runs the command next-line (found in global-map), which is an
@@ -478,38 +447,36 @@ Sirve para llevar el cursor al final de la línea actual.
 3. **Anthony Erazo:**
    C-d runs the command org-delete-char (found in org-mode-map), which is
 an interactive native-compiled Lisp function in ‘org.el’.
+Borra el carácter donde está el cursor.
 
 C-k runs the command org-kill-line (found in org-mode-map), which is
 an interactive native-compiled Lisp function in ‘org.el’.
+ Elimina el texto desde el cursor hasta el final de la línea.
 
 C-y runs the command org-yank (found in org-mode-map), which is an
 interactive native-compiled Lisp function in ‘org.el’.
 
 It is bound to C-y, S-<insertchar> and S-<insert>.
 It can also be invoked from the menu: Edit → Paste
+Pega el texto que se copió o cortó previamente.
 
 M-w runs the command kill-ring-save (found in global-map), which is an
 interactive native-compiled Lisp function in ‘simple.el’.
+Copia el texto seleccionado sin borrarlo.
 
-It is bound to C-<insertchar>, C-<insert> and M-w.
-It can also be invoked from the menu: Edit → Copy
-
-(kill-ring-save BEG END &optional REGION)
-
-Save the region as if killed, but don’t kill it.
-In Transient Mark mode, deactivate the mark.
-If ‘interprogram-cut-function’ is non-nil, also save the text for a window
-system cut and paste.
 4. **Anthonny Almeida:**
 ~C-x C-s~.Save current buffer in visited file if modified.
 Variations are described below.
+Sirve para guardar los cambios que le hayas hecho al documento de una.
 
 ~C-f~ Move point N characters forward (backward if N is negative).
 On reaching end or beginning of buffer, stop and signal error.
 Interactively, N is the numeric prefix argument.
 If N is omitted or nil, move point 1 character forward.
+Sirve para mover el cursor unito a la derecha o saltar varios caracteres si le mandas un número.
 
 ~M-a~ Go to beginning of sentence, or beginning of table field.
+Sirve para mandar el cursor directo al inicio de la oración o al principio de una celda en una tabla.
 
 ~C-x 2~ Split WINDOW-TO-SPLIT into two windows, one above the other.
 WINDOW-TO-SPLIT defaults to the selected window if omitted or nil.
@@ -517,11 +484,12 @@ The newly created window will be below WINDOW-TO-SPLIT and will show
 the same buffer as WINDOW-TO-SPLIT, if it is a live window, else the
 buffer shown in the WINDOW-TO-SPLIT’s frame’s selected window.
 Return the new window.
+Sirve para partir la pantalla en dos (una arriba y otra abajo) para ver el mismo archivo o cosas distintas.
 
  
 
 **Comandos Difíciles**
-1. **Estudiante A:** <Poner el comando>. <Pegar lo que dice el primer párrafo de la ayuda>
+
 2. **Nelson Almeida:**
 
 ~C-M-v~ runs the command scroll-other-window (found in global-map),
@@ -545,74 +513,26 @@ Sirve para justificar un párrafo para que todas las líneas queden ordenadas de
 
 C-x C-f runs the command find-file (found in global-map), which is an
 interactive native-compiled Lisp function in ‘files.el’.
-
-It is bound to <open> and C-x C-f.
-It can also be invoked from the menu: File → Visit New File...
-
-(find-file FILENAME &optional WILDCARDS)
-
-Edit file FILENAME.
-Switch to a buffer visiting file FILENAME, creating one if none
-already exists.
-Interactively, the default if you just type RET is the current directory,
-but the visited file name is available through the minibuffer history:
-type M-n to pull it into the minibuffer.
+Copia el texto seleccionado sin borrarlo.
 
 C-x C-s runs the command save-buffer (found in global-map), which is
 an interactive native-compiled Lisp function in ‘files.el’.
-
-It is bound to C-x C-s.
-It can also be invoked from the menu: File → Save
-
-(save-buffer &optional ARG)
-
-Save current buffer in visited file if modified.
-Variations are described below.
-
-By default, makes the previous version into a backup file
- if previously requested or if this is the first save.
-Prefixed with one C-u, marks this version
- to become a backup when the next save is done.
-Prefixed with two C-u’s,
- makes the previous version into a backup file.
-Prefixed with three C-u’s, marks this version
- to become a backup when the next save is done,
- and makes the previous version into a backup file.
-
-With a numeric prefix argument of 0, never make the previous version
-into a backup file.
+Guarda el archivo dentro del que se está trabajando, si se hicieron cambios en un archivo, los guarda en el disco. 
 
 C-x o runs the command other-window (found in global-map), which is an
 interactive native-compiled Lisp function in ‘window.el’.
-
-It is bound to C-x o.
-
-(other-window COUNT &optional ALL-FRAMES INTERACTIVE)
-
-Select another window in cyclic ordering of windows.
-COUNT specifies the number of windows to skip, starting with the
-selected window, before making the selection.  If COUNT is
-positive, skip COUNT windows forwards.  If COUNT is negative,
-skip -COUNT windows backwards.  COUNT zero means do not skip any
-window, so select the selected window.  In an interactive call,
-COUNT is the numeric prefix argument.  Return nil.
+Permite moverse entre ventanas dentro de emacs, sirve especialmente si se tiene la pantalla dividida. 
 
 M-x runs the command execute-extended-command (found in global-map),
 which is an interactive native-compiled Lisp function in ‘simple.el’.
-
-It is bound to <execute>, <menu> and M-x.
-
-(execute-extended-command PREFIXARG &optional COMMAND-NAME TYPED)
-
-Read a command name, then read the arguments and call the command.
-To pass a prefix argument to the command you are
-invoking, give a prefix argument to ‘execute-extended-command’.
+Permite ejecutar comandos escribiendo su nombre.
 
 4. **Anthonny Almeida**:
  ~C-x k~ Kill the buffer specified by BUFFER-OR-NAME.
 The argument may be a buffer or the name of an existing buffer.
 Argument nil or omitted means kill the current buffer.  Return t if the
 buffer is actually killed, nil otherwise.
+Sirve para "matar" o cerrar la pestaña (buffer) que tienes abierta y dejar de editarla.
 
  ~C-x C-f~ Edit file FILENAME.
 Switch to a buffer visiting file FILENAME, creating one if none
@@ -620,15 +540,19 @@ already exists.
 Interactively, the default if you just type RET is the current directory,
 but the visited file name is available through the minibuffer history:
 type M-n to pull it into the minibuffer.
+Sirve para buscar y abrir un archivo que ya tengas o crear uno nuevo desde cero.
 
 ~M-%~ Replace some occurrences of FROM-STRING with TO-STRING.
 As each match is found, the user must type a character saying
 what to do with it.  Type SPC or ‘y’ to replace the match,
 DEL or ‘n’ to skip and go to the next match.  For more directions,
 type C-h at that time.
+Sirve para buscar una palabra y que el Emacs te pregunte si quieres cambiarla por otra, una por una.
 
 ~C-s~ Do incremental search forward.
 With a prefix argument, do an incremental regular expression search instead.
+Sirve para buscar una palabra en el texto hacia adelante mientras vas escribiendo las letras.
+
 
 * Equipo de Trabajo
 Complete la información de los integrantes de grupo e indique el líder
@@ -638,13 +562,12 @@ de grupo.
 |------------------+-----------------------------+-------------|
 | Nombre           | email                       | Rol         |
 |------------------+-----------------------------+-------------|
-| Alan Turing      | a.turing@enigma.com         | líder       |
 | Anthonny Almeida | anthonny.almeida@epn.edu.ec | colaborador |
-| Nelson Almeida   | nelson.almeida@epn.edu.ec   | colaborador |
+| Nelson Almeida   | nelson.almeida@epn.edu.ec   | Líder       |
 | Anthony Erazo    | anthony.erazo01@epn.edu.ec  | colaborador |
 |------------------+-----------------------------+-------------|
 
-* Verificación de Entregables [57%]:
+* Verificación de Entregables [100%]:
 Ejecute ~C-c C-c~ sobre los ítems de tarea según se hayan cumplido o
 no. Si un ítem no pudo realizarse apunte en la siguiente sección las
 razones al respecto.
@@ -652,10 +575,11 @@ razones al respecto.
 - [X] Tutorial de Comandos Emacs realizado.
 - [X] Captura de Imágenes y puntajes de Emacs Trainer App.
 - [X] Usando Emacs para tener ayuda sobre Emacs
-- [ ] Verifique que estén los nombres de los integrantes del equipo e
+- [X] Verifique que estén los nombres de los integrantes del equipo e
   identificado el líder.
-- [ ] Revisión de ortografía con ~ispell~ en el buffer
-- [ ] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
+- [X] Revisión de ortografía con ~ispell~ en el buffer
+- [X] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
 ** Problemas con la Tarea:
-- Tarea $X_1$ no pudo completarse debido a
-- Tarea $X_2$ no pudo completarse debido a
+-  Uno de los miembros abandonó el curso, dejando el grupo con solo 3 integrantes.
+Ante la salida del compañero, Nelson Almeida asume el liderazgo del equipo y la redistribución de sus cargas de trabajo para cumplir con los objetivos.
+
